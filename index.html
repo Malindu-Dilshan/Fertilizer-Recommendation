@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capsicum/Chilli Fertilizer Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Capsicum/Chilli Fertilizer Guide</h1>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="plantCount">Number of Plants</label>
+                <input type="number" id="plantCount" min="1" required placeholder="Enter number of plants">
+            </div>
+            
+            <div class="input-group">
+                <label for="weekNumber">Week Number</label>
+                <input type="number" id="weekNumber" min="1" max="25" required placeholder="Enter week (1-25)">
+            </div>
+            
+            <button onclick="calculateRecommendation()">Calculate Recommendations</button>
+        </div>
+
+        <div class="results" id="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
